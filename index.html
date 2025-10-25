@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toasties Menu</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff8ef;
+      color: #333;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #f59e0b, #f97316);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      font-size: 1rem;
+      margin-top: 6px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 700px) {
+      .menu { grid-template-columns: 1fr 1fr; }
+    }
+    .item {
+      background: white;
+      padding: 16px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .item h2 {
+      color: #f59e0b;
+      margin-bottom: 6px;
+    }
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .price {
+      font-weight: bold;
+      color: #111;
+      margin-top: 8px;
+    }
+    .drink {
+      background: #e8fff3;
+      border: 2px solid #10b981;
+      padding: 16px;
+      border-radius: 14px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .drink h2 {
+      color: #10b981;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TOASTIES MENU</h1>
+    <p>"Crunchy Comfort in Every Bite"</p>
+  </header>
+
+  <main class="container">
+    <section class="menu">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1617196039897-f4c52d19f8b4?auto=format&fit=crop&w=800&q=80" alt="Cheese Toasties">
+        <h2>Cheese Toasties Combo</h2>
+        <p>Golden toasted bread brushed with garlic butter and melted cheese. Served with a creamy dip and Kiwi-Cucumber Sparkle Soda.</p>
+        <p class="price">₱35.00 per combo</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1603126857670-7bcded83f3e4?auto=format&fit=crop&w=800&q=80" alt="Cinnamon Toasties">
+        <h2>Cinnamon Toasties Combo</h2>
+        <p>Sweet, crispy toast sprinkled with cinnamon sugar. Comes with chocolate dip and Kiwi-Cucumber Sparkle Soda.</p>
+        <p class="price">₱35.00 per combo</p>
+      </div>
+    </section>
+
+    <section class="drink">
+      <h2>Kiwi-Cucumber Sparkle Soda</h2>
+      <p>Our refreshing signature drink — a blend of kiwi syrup, cucumber slices, and sparkling soda for a cool, fizzy finish!</p>
+      <p class="price">Included in every combo 🍹</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Toasties • Team FlavorFuel • “Taste. Crunch. Smile.”
+  </footer>
+</body>
+</html>
